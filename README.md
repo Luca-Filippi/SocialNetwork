@@ -52,8 +52,13 @@ Cartella public:
                    
                    
 Credenziali(username, password) di alcuni utenti nel database:
+
   ->(harry-potter, Edvige2000);
+  
   ->(ron-weasley, Crosta);
+  
   ->(hermione-granger, Grattastinchi);
+  
   ->(draco-malfoy, Purosangue);
+  
   ->(albus-silente, SorbettoAlLimone);

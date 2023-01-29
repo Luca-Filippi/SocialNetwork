@@ -28,7 +28,7 @@ Apllicazione Nodejs:
 
 Per l'autenticazione ho scelto di usare una soluzione autocostruita basata su un token jwt rappresentato da una variabile global token definita in route.js
 , inzialmente nulla e acquisisce un valore solo se si effutta un signin o un signup in modo corretto. Questa soluzione ha il difetto di supportare un solo client alla volta, ma risulta più conveninte ai fini del progetto, in quanto semplifica la gestione delle autorizzazioni. Nella realtà è preferibile
-inseirire il token in un cookie (visibile a scopo dimostrativo in /api/auth/signin) e poi utilizzare questo cookie per gestire le autorizzazioni.
+inseirire il token in un cookie (visibile a scopo dimostrativo in /api/auth/signin) e poi inserirlo nell'header delle successive richieste. Questo passaggio è stato saltato (grazie all'utilizzo del token come variabile globale) per semplificare l'utilizzo delle api/social.
 
 Cartella public:
 

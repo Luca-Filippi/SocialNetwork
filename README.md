@@ -14,7 +14,7 @@ Sono state create 4 collezioni: Users(userId, name, surname,bio, username, passw
 All'interno sono presenti i documenti caricati mendiante la funzione insertData() in db.js più altri caricati durante alcuni miei test, si possono vedere tutti nel file databaseDocuments.txt
 
 
-Apllicazione Nodejs:
+Applicazione Nodejs:
 
 -> db.js si occuppa della gestione del database;
 
@@ -49,6 +49,8 @@ Cartella public:
                    - feed.js se un'utente è loggato riempie una tabella con i suoi feed;
                    - profilo.js se un'utente è loggato riempie la pagina con le informazioni, i messaggi e i followers dell'utente;
                    - sendMessage.js se un'utente loggato scrive un messaggio nell'apposita textbox e preme invia, questo script aggiunge al database il nuovo messaggio.
+                   
+I file searchUser.js e profilo.js rappresentano funzionalità non esplicitamente richieste dalle istruzioni del progetto, ma che ho voluto inseire per sfruttare alcune api anche dal punto di vista del client.
                    
                    
 Credenziali(username, password) di alcuni utenti nel database:

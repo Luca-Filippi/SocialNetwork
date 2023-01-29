@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Feed </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="./index.css" rel="stylesheet">
+    </head>
+    <body style="background-color:#F0FFFF">
+        <header>
+            <div class = "top">
+                <button  onclick="window.location = './login.html';"class="btn btn-light"> Login </button>
+                <button  onclick="window.location = './signup.html';"class="btn btn-dark"> Registrati </button>
+                <button  onclick="window.location = './index.html';"class="btn btn-warning"> Pagina Principale </button>
+                <button  onclick="window.location = './feed.html';"class="btn btn-warning"> Feed </button>
+            </div>
+        </header>
+        <section id = "dati utente loggato">
+            <p> Dati utente</p>
+            <div id = "profilo">
+
+            </div>
+        </section>
+        <section class="mes" id = "messaggi dell'utente loggato">
+            <p> Messaggi scritti dall'utente</p>
+            <table class="table-light" id="tableMyMessages" hidden>
+                <thead>
+                    <tr>
+                        <th scope="col"> Messaggio </th>
+                        <th scope="col"> Data </th>
+                    </tr>
+            </thead>
+            <tbody id="messaggi">
+
+            </tbody>
+            </table>
+        </section>
+        <section class = "fol" id="follower dell'utente">
+            <p> followers dell'utete </p>
+            <table class="table-light" id="tableMyFollowers" hidden>
+                <thead>
+                    <tr>
+                        <th scope="col"> userId </th>
+                        <th scope="col"> username </th>
+                    </tr>
+            </thead>
+            <tbody id="followers">
+
+            </tbody>
+            </table>
+        </section>
+        <footer class="messageSection">
+            <div class= "sendMessage">
+                <form>
+                    <textarea rows="10" cols ="50" id ="message" name="message">
+                        Scrivi un nuovo messaggio
+                    </textarea><br><br>
+                    <input type="submit" value="Invia" id ="bottone">
+                </form>
+            </div>
+        </footer>
+        <script src = "./profilo.js"></script>
+        <script src = "./sendMessage.js" defer></script>
+    </body>
+</html>

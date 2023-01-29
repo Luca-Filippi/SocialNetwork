@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Pagina per la registrazione</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    </head>
+    <body style="background-color:#F0FFFF">
+        <br><br>
+        <p>Se sei gi&#224 autenticato, clicca <a href="./index.html" class="text-decoration-none">qui</a> 
+            per tornare alla pagina principale.</p><br><br>
+        <p class="text-center">Inserisci qui i tuoi dati</p><br>
+        <p class="text-center"> Vogliamo sapere il tuo <strong>nome</strong>, il tuo <strong> cognome</strong> e 
+            qualche informazione su di te (<strong>bio</strong>), inoltre forniscici anche uno <strong>username</strong>
+            e una <strong>password</strong> che ti serviranno per effettuare il login le prossime volte.
+        </p><br><br>
+        <fieldset>
+            <form>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <label for="name"> <strong>Nome:</strong> </label>
+                    <input type="text" id="name" name = "name" class="form-control" aria-label="Nome"><br>
+                    <label for="surname"> <strong>Cognome:</strong> </label>
+                    <input type="text" id="surname" name = "surname" class="form-control" aria-label="Cognome"><br>
+                    <label for="bio"> <strong>Bio:</strong> </label><br>
+                    <textarea rows="4" cols="40" id="bio" name = "bio">
+                        Scrivi qui la tua bio
+                    </textarea><br><br>
+                    <label for="un"> <strong>Username:</strong> </label>
+                    <input type="text" id="un" name = "username" class="form-control" aria-label="Username"><br>
+                    <label for="pass"> <strong>Password:</strong> </label>
+                    <input type="password" id="pass" name = "password" class="form-control" aria-label="password"><br>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <input type="submit" id="button" value="SignUp" class="btn btn-primary">
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+        <br>
+        <p class="text-center">Sei gi&#224 registrato?, allora clicca <a href="./login.html"> qui </a>
+             per autenticarti.</p>
+        <script src = "./validationSignup.js" defer> </script>
+    </body>
+</html>

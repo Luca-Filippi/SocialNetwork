@@ -11,7 +11,7 @@ Per implementare la base di dati è stato scelto un database di tipo nosql, la s
 Sono state create 4 collezioni: Users(userId, name, surname,bio, username, password), Messages(messageId, userId, text, data), Likes(userId, messageId)
 , Followers(userId, userFollowId).
 
-All'interno sono presenti i documenti caricati mendiante la funzione insertData() in db.js più altri caricati durante alcuni miei test.
+All'interno sono presenti i documenti caricati mendiante la funzione insertData() in db.js più altri caricati durante alcuni miei test, si possono vedere tutti nel file databaseDocuments.txt
 
 
 Apllicazione Nodejs:
